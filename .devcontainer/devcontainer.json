@@ -1,0 +1,26 @@
+{
+    //"image": "mcr.microsoft.com/devcontainers/python:3",
+    "name": "Python 3",
+    "build": {
+      "dockerfile": "Containerfile",
+      "context": "..",
+      "args": {
+        // Options
+        "NODE_VERSION": "none"
+      }
+    },
+    "customizations": {
+        "vscode": {
+          "extensions": [
+            "streetsidesoftware.code-spell-checker",
+            "ms-azuretools.vscode-docker",
+            "ms-python.python",
+            "ms-python.vscode-pylance",
+            "github.vscode-github-actions"
+        ]
+        }
+      },
+      
+      // Use 'postCreateCommand' to run commands after the container is created.
+	    "postCreateCommand": "make install"
+}
