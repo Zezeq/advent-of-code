@@ -11,7 +11,7 @@ build: install
 .PHONY: run
 run: install
 	@echo "Running the application..."
-	python src/day1.py
+	python src/day2.py
 
 # Install dependencies
 .PHONY: install
@@ -23,7 +23,7 @@ install:
 .PHONY: test
 test:
 	@echo "Running tests..."
-	python -m unittest -v
+	python -m unittest -v 
 
 # Clean up
 .PHONY: clean
