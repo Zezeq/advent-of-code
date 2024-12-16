@@ -11,7 +11,7 @@ build: install
 .PHONY: run
 run: install
 	@echo "Running the application..."
-	python src/day3.py
+	python src/day4.py
 
 # Install dependencies
 .PHONY: install
